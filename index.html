@@ -600,6 +600,19 @@
             </li>
           </ul>
         </div>
+        <div class="footer-mailing-list">
+          <h2 class="mailing-list-header">Подпишитесь на рассылку</h2>
+          <div class="mailing-list">
+            <label class="mailing-list-label" for="mailing-list"></label>
+            <input class="mailing-list-input" type="text" placeholder="E-mail" />
+            <div>
+              <button class="submit">Подписаться</button>
+              <svg class="mailing-list-icon" width="24" height="24">
+                <use href="./images/icon-stile.svg#icon-send"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <!--Modal window-->
@@ -611,34 +624,55 @@
           </svg>
         </button>
         <form name="modal-form" autocomplete="on">
-          <div class="modal-form-name">
-            <h2 class="modal-form-header">Оставьте свои данные, мы вам перезвоним</h2>
-            <div class="modal-form-name">
-              <label class="modal-form-label" for="name">Имя</label>
-              <input class="modal-forn-input" type="text" id="name" name="user-name" />
-            </div>
-            <div class="modal-form-phone">
-              <label class="modal-form-label" for="phone">Телефон</label>
-              <input class="modal-forn-input" type="tel" id="phone" name="user-phone" />
-            </div>
-            <div class="modal-form-mail">
-              <label class="modal-form-label" for="mail">Почта</label>
-              <input class="modal-forn-input" type="email" id="mail" name="user-mail" />
-            </div>
-            <div class="modal-form-comment">
-              <label class="modal-form-label" for="comment">Коментарий</label>
-              <textarea
-                name="comment"
-                id="comment"
-                rows="10"
-                placeholder="Введите текст"
-              ></textarea>
-            </div>
-            <div class="modal-form-agreement">
-              <input type="checkbox" id="agreement" />
-              <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-            </div>
-          </div>
+          <h2 class="modal-form-header">Оставьте свои данные, мы вам перезвоним</h2>
+          <ul class="modal-form-list list">
+            <li>
+              <label class="form-label-name" for="name">Имя</label>
+              <div class="modal-form-name">
+                <input class="form-input-name" type="text" id="name" name="user-name" />
+                <svg class="form-name" width="20" height="20">
+                  <use href="./images/icon-stile.svg#person-modal"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <label class="form-label-phone" for="phone">Телефон</label>
+              <div class="modal-form-phone">
+                <input class="form-input-phone" type="tel" id="phone" name="user-phone" />
+                <svg class="form-phone" width="20" height="20">
+                  <use href="./images/icon-stile.svg#phone-modal"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <label class="form-label-mail" for="mail">Почта</label>
+              <div class="modal-form-mail">
+                <input class="form-input-mail" type="email" id="mail" name="user-mail" />
+                <svg class="form-mail" width="20" height="20">
+                  <use href="./images/icon-stile.svg#email-modal"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <label class="form-label-comment" for="comment">Коментарий</label>
+              <div class="modal-form-comment">
+                <textarea
+                  name="comment"
+                  id="comment"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+            </li>
+            <li>
+              <div class="modal-form-agreement">
+                <label class="form-agreement-label" for="agreement"
+                  >Соглашаюсь с рассылкой и принимаю Условия договора</label
+                >
+                <input class="form-agreement-input" type="checkbox" id="agreement" />
+              </div>
+            </li>
+          </ul>
           <button class="submit">Отправить</button>
         </form>
       </div>
