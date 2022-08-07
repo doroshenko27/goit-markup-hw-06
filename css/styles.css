@@ -653,8 +653,6 @@ footer {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  /*visibility: hidden;
-  transform: translate(-50%, -50%) scale(0.3) rotate(1turn);*/
 }
 
 .modal {
@@ -775,34 +773,7 @@ textarea:hover {
 textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-/*
-.modal-form-agreement {
-  display: flex;
-  gap: 8px;
-}
-.form-agreement-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-.form-agreement-input {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 4px;
-  border: solid 1px rgba(33, 33, 33, 0.2);
-  resize: none;
-  margin-bottom: 20px;
-  height: 120px;
-  outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-agreement-input:focus,
-.form-agreement-input:hover {
-  border: 1px solid var(--background-color-btn);
-}
-.form-agreement::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}*/
+
 .check-option {
   display: flex;
 }
