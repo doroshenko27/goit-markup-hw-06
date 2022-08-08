@@ -408,17 +408,19 @@
         </ul>
       </div>
       <div class="footer-mailing-list">
-        <h2 class="mailing-list-header">Подпишитесь на рассылку</h2>
-        <div class="mailing-list">
-          <label class="mailing-list-label" for="mailing-list"></label>
-          <input class="mailing-list-input" type="text" placeholder="E-mail" />
-          <div>
-            <button class="submit">Подписаться</button>
-            <svg class="mailing-list-icon" width="24" height="24">
-              <use href="./images/icon-stile.svg#icon-send"></use>
-            </svg>
+        <p class="mailing-list-header">Подпишитесь на рассылку</p>
+        <form class="mailing-form">
+          <div class="mailing-list">
+            <label class="mailing-list-label" for="mailing-list"></label>
+            <input class="mailing-list-input" type="text" placeholder="E-mail" required />
+            <div>
+              <button class="submit">Подписаться<svg class="mailing-list-icon" width="24" height="24">
+                  <use href="./images/icon-stile.svg#icon-send"></use>
+                </svg></button>
+
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </footer>
@@ -435,7 +437,7 @@
 
         <label class="form-label" for="name">Имя</label>
         <div class="modal-form">
-          <input class="form-input" type="text" id="name" name="user-name" />
+          <input class="form-input" type="text" id="name" name="user-name" required />
           <svg class="form-name" width="20" height="20">
             <use href="./images/icon-stile.svg#person-modal"></use>
           </svg>
@@ -443,7 +445,7 @@
 
         <label class="form-label" for="phone">Телефон</label>
         <div class="modal-form">
-          <input class="form-input" type="tel" id="phone" name="user-phone" />
+          <input class="form-input" type="tel" id="phone" name="user-phone" required />
           <svg class="form-name" width="20" height="20">
             <use href="./images/icon-stile.svg#phone-modal"></use>
           </svg>
@@ -451,7 +453,7 @@
 
         <label class="form-label" for="mail">Почта</label>
         <div class="modal-form">
-          <input class="form-input" type="email" id="mail" name="user-mail" />
+          <input class="form-input" type="email" id="mail" name="user-mail" required />
           <svg class="form-name" width="20" height="20">
             <use href="./images/icon-stile.svg#email-modal"></use>
           </svg>
@@ -463,7 +465,7 @@
         </div>
 
         <label class="check option">
-          <input class="check__input" type="checkbox" />
+          <input class="check__input" type="checkbox" required />
           <span class="check__box"></span>
           <div class="check-option">
             <p>Соглашаюсь с рассылкой и принимаю</p>
