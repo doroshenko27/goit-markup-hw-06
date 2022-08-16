@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --color-text: #212121;
   --background-color: #2f303a;
   --color-accent: #757575;
@@ -11,9 +11,9 @@
   --background-color-btn: #118ce8;
   --transparency: #ffffff99;
   --color-icon-fix: #afb1b8;
-}
+}*/
 
-body {
+/*body {
   font-family: roboto, sans-serif;
   background-color: var(--color-title-second);
   color: var(--color-text);
@@ -23,7 +23,7 @@ body {
 
 .no-scroll {
   overflow: hidden;
-}
+}*/
 
 .container {
   outline: 2px solid rgb(224, 244, 8);
@@ -32,7 +32,7 @@ body {
   padding: 0 15px;
 }
 
-.visually-hidden {
+/*.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -44,9 +44,9 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+*/
 /*******************Reset stile*******************/
-h1,
+/*,
 h2,
 h3,
 h4,
@@ -64,9 +64,9 @@ img {
 
 address {
   font-style: normal;
-}
+}*/
 
-button {
+/*button {
   display: block;
   margin: 0 auto;
   font-family: roboto;
@@ -75,12 +75,12 @@ button {
   border-radius: 4px;
 }
 
-.section {
+/*section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+}*/
 
-.link {
+/*.link {
   text-decoration: none;
   color: inherits;
 }
@@ -89,13 +89,15 @@ button {
   list-style: none;
   padding-left: 0;
   margin: 0;
-}
+}*/
 
 /*/////////навигация страницы//////////*/
 /*---------------header----------------*/
-.header-ctr {
+/*.header__ctr.container {
   align-items: center;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav {
@@ -118,7 +120,7 @@ button {
 }
 
 /*****************site nav****************/
-.nav__list {
+/*.nav__list {
   display: flex;
   gap: 50px;
   align-items: center;
@@ -145,8 +147,6 @@ button {
 
 .nav__item {
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .nav__link {
   font-weight: 500;
@@ -155,17 +155,16 @@ button {
 }
 
 /******************auth nav*******************/
-.header__nav {
+/*.header__list {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 50px;
 }
-.header__adress:hover,
-.header__adress:focus {
-  color: var(--color-logo);
-}
 
+.header__item {
+  position: relative;
+}
 .header__adress {
   color: var(--color-accent);
   font-style: normal;
@@ -175,24 +174,13 @@ button {
   letter-spacing: 0.02em;
   transition: color 205ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header__adress:hover,
+.header__adress:focus {
+  color: var(--color-logo);
+}
 .header-item .link {
   display: flex;
   align-items: center;
-}
-
-.header__adrress:hover,
-.header__adrress:focus {
-  color: var(--color-logo);
-}
-
-.header__adrress {
-  color: var(--color-icon-fix);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 205ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__icon {
@@ -216,11 +204,6 @@ button {
   margin: 0 auto;
 }
 
-.business__title:hover,
-.business__title:focus {
-  color: var(--color-title-second);
-}
-
 .business__title {
   color: var(--color-title-second);
   font-weight: 900;
@@ -236,9 +219,14 @@ button {
   text-align: center;
 }
 
+.business__title:hover,
+.business__title:focus {
+  color: var(--color-title-second);
+}
+
 /******************button *******************/
 
-.business__btn {
+/*.business__btn {
   color: var(--color-title-second);
   background-color: var(--color-logo);
   font-weight: 700;
@@ -259,7 +247,7 @@ button {
 
 /******************our features***************/
 
-.ftr-container .container {
+/*.ftr-container .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -282,11 +270,6 @@ button {
   justify-content: center;
   background-color: var(--backround-title);
   margin-bottom: 30px;
-}
-
-.features__feature-list {
-  display: flex;
-  gap: 30px;
 }
 
 .features__title {
@@ -314,7 +297,7 @@ button {
 /***************our features and**************/
 
 /*********************Work********************/
-.work {
+/*.work {
   padding-top: 0;
 }
 
@@ -365,7 +348,7 @@ button {
 /*********************Work end********************/
 
 /********************Command**********************/
-.command {
+/*.command {
   background-color: var(--backround-title);
 }
 
@@ -418,7 +401,7 @@ button {
 }
 
 /*************************Socials icon*****************/
-.command__socials {
+/*.command__socials {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -448,7 +431,7 @@ button {
 
 /*******************Command end********************/
 /*--------------------Klient----------------------*/
-.klient {
+/*.klient {
   background-color: var(--color-title-second);
 }
 
@@ -493,7 +476,7 @@ button {
 
 /*******************Klient end*********************/
 /*--------------------footer----------------------*/
-footer {
+/*footer {
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -551,7 +534,7 @@ footer {
   color: var(--background-color-btn);
 }
 /*******************Footer icons*********************/
-.footer__icon-container {
+/*.footer__icon-container {
   margin-right: auto;
 }
 
@@ -593,7 +576,7 @@ footer {
 }
 /**************footer-mailing-list*****************/
 
-.footer__mailing-header {
+/*.footer__mailing-header {
   margin-bottom: 20px;
   color: var(--color-title-second);
   font-weight: 700;
@@ -643,7 +626,7 @@ footer {
 }
 /*********************footer end**********************/
 /*******************Modal window*********************/
-.backdrop {
+/*.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -698,7 +681,7 @@ footer {
   cursor: pointer;
 }
 /*****************modal form***********************/
-.backdrop__header {
+/*.backdrop__header {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -802,7 +785,7 @@ textarea::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*********************check box***********************/
-.backdrop__agreement {
+/*.backdrop__agreement {
   color: var(--background-color-btn);
 }
 
@@ -856,7 +839,7 @@ textarea::placeholder {
 }
 /*----------------Стили для портфолио----------------*/
 /*----------------working container------------------*/
-.container {
+/*.container {
   padding-top: 94px;
   padding-bottom: 80px;
 }
