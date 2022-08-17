@@ -12,8 +12,8 @@
     flex-direction: column;
     margin-bottom: 10px;
 
-    &:focus-within .form-input,
-    &:hover .form-input {
+    &:focus-within .backdrop__input,
+    &:hover .backdrop__input {
         border: solid 1px var(--background-color-btn);
     }
 
@@ -30,6 +30,7 @@
     width: 18px;
     height: 18px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop__label {
@@ -93,11 +94,6 @@ textarea {
     }
 }
 
-.backdrop__option {
-    display: flex;
-    justify-content: center;
-}
-
 .backdrop__submit {
     color: var(--color-title-second);
     background-color: var(--color-logo);
@@ -108,5 +104,6 @@ textarea {
     line-height: 1.88;
     letter-spacing: 0.06em;
     padding: 10px 32px;
+    margin-top: 20px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

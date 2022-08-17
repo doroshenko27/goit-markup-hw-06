@@ -1,8 +1,7 @@
 .header__ctr.container {
   align-items: center;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
 }
 
 .header__list {
@@ -19,6 +18,8 @@
 
 .header__adress {
   color: var(--color-accent);
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

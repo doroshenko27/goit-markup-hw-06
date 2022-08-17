@@ -199,7 +199,7 @@ section {
           flex-direction: column;
   margin-bottom: 10px;
 }
-.backdrop__form:focus-within .form-input, .backdrop__form:hover .form-input {
+.backdrop__form:focus-within .backdrop__input, .backdrop__form:hover .backdrop__input {
   border: solid 1px var(--background-color-btn);
 }
 .backdrop__form:focus-within .backdrop__name, .backdrop__form:hover .backdrop__name {
@@ -292,15 +292,6 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.backdrop__option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .backdrop__submit {
   color: var(--color-title-second);
   background-color: var(--color-logo);
@@ -311,12 +302,23 @@ textarea::placeholder {
   line-height: 1.88;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  margin-top: 20px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop__agreement {
   color: var(--background-color-btn);
+}
+
+.backdrop__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
 }
 
 .option {
@@ -339,7 +341,7 @@ textarea::placeholder {
 .check__box {
   left: 15px;
   position: absolute;
-  margin-top: 0.1em;
+  margin-top: 8px;
   margin-left: -1em;
   width: 16px;
   height: 15px;
@@ -441,8 +443,6 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header__list {
@@ -462,6 +462,12 @@ textarea::placeholder {
 
 .header__adress {
   color: var(--color-accent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -906,11 +912,6 @@ footer {
   top: 13px;
   position: absolute;
   fill: var(--color-title-second);
-}
-
-.container {
-  padding-top: 94px;
-  padding-bottom: 80px;
 }
 
 .header-portfolio {
